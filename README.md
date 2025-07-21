@@ -38,6 +38,8 @@
 
 - [Cryptography 101 for Blockchain Developers Part 3/3: Elliptic Curve Pairings](https://www.youtube.com/watch?v=9TFEBuANioo)
 
+- [Exploring Elliptic Curve Pairings](https://vitalik.eth.limo/general/2017/01/14/exploring_ecp.html) by Vitalik Buterin.
+
 Problem statement to **Rank 1 Constraint System (R1CS)** to **Quadratic Arithmetic Program (QAP)** :
 
 - [Zk-SNARK - Part 1 - Problem statement to R1CS](https://www.youtube.com/watch?v=bqSFyULJFtQ)
@@ -50,26 +52,34 @@ Problem statement to **Rank 1 Constraint System (R1CS)** to **Quadratic Arithmet
 
 - [Multi-Party Computation simplified: Ivan Damgård, Co-founder/Chief Cryptographer-Partisia Blockchain](https://www.youtube.com/watch?v=vRVudJADQLk)
 
+**KZG Polynomial Commitment Scheme** (**Powers of Tau** trusted setup) :
+
+- [Powers of Tau | Solidity Fridays](https://www.youtube.com/watch?v=TcQXzGTSXfo)
+  > Recording of 39th power of tau generation : [Semaphore Perpetual Powers of Tau #39](https://www.youtube.com/watch?v=wZaqiTldLuk)
+
+- [How KZG Commitment Works: Polynomial Commitments Simplified | Episode 4](https://www.youtube.com/watch?v=H7AeoqzAfD0)
+
+- [PlonK Deconstructed 4: Polynomial Commitment Scheme](https://www.maya-zk.com/blog/kzg)
+
+- [KZG in Practice: Polynomial Commitment Schemes and Their Usage in Scaling Ethereum](https://scroll.io/blog/kzg)
+
+- [KZG polynomial commitments](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html) explained by Dankrad Feist.
+
 Approaching **Groth 16** :
 
 - [ZK HACK - How to Make SNARKs - Alessandro Chiesa](https://www.youtube.com/watch?v=KjkIQLJk4eQ)
 
 - [M2S4: Groth16 with Guest speaker Ying Tong](https://www.youtube.com/watch?v=Hz_XHfxunck)
 
-- [Powers of Tau | Solidity Fridays](https://www.youtube.com/watch?v=TcQXzGTSXfo)
-  > Recording of 39th power of tau generation : [Semaphore Perpetual Powers of Tau #39](https://www.youtube.com/watch?v=wZaqiTldLuk)
+- [An overview of the Groth16 proof system](https://blog.lambdaclass.com/groth16/) by LambdaClass.
 
 - [Groth16](https://alinush.github.io/groth16) explained by Alin Tomescu.
 
-- [An overview of the Groth16 proof system](https://blog.lambdaclass.com/groth16/)
-
-- [Groth16 Explained](https://rareskills.io/post/groth16?utm_source=chatgpt.com) by RareSkills.
+- [Groth16 Explained](https://rareskills.io/post/groth16) by RareSkills.
 
 - [Groth16](https://xn--2-umb.com/22/groth16/) explained by Remco Bloemen.
 
 ## Digging Deeper
-
-- [The 3rd Bar-Ilan Winter School on Cryptography: Bilinear Pairings in Cryptography](https://www.youtube.com/playlist?list=PL8Vt-7cSFnw2V2Wpf4MpwtSJvLvZo1ADB)
 
 - [Proofs, Arguments, and Zero-Knowledge - Study Group](https://www.youtube.com/playlist?list=PLTPK8HRi5qmlIBA7TDTO8hBOprAc1FIQv)
 
