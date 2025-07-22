@@ -32,8 +32,8 @@ impl<FF: PrimeField> QAP<FF> {
   ///
   /// - `r1cs` : the Rank1 Constraint System (R1CS).
   ///
-  /// - `tau` (the toxic waste) : random element chosen from FF, to perform the KZG polynomial
-  ///   commitment scheme based trusted setup ceremony.
+  /// - `tau` (part of the toxic waste) : random element chosen from FF, to perform the KZG
+  ///   polynomial commitment scheme based trusted setup ceremony.
   pub fn generateFromR1CS(r1cs: ConstraintSystemRef<FF>, tau: &FF) -> QAPGenerationOutput<FF> {
     /*
       The R1CS is reduced to a single constraint, which is initially in matrix form :
@@ -85,7 +85,7 @@ impl<FF: PrimeField> QAP<FF> {
     // Construct the Evaluation Domain D, which will be used to do the FFTs.
     // We'll use the Radix2 evaluation domain, which implies that the roots of unity will be our
     // evaluation points.
-    let evaluationDomain = Self::createEvaluationDomain(&r1cs);
+    let evaluationDomain = Self::getEvaluationDomain(&r1cs);
 
     // Evaluate A(τ), B(τ), C(τ) and Z(τ).
     // These will be used for the KZG Polynomial Commitment Scheme based trusted setup ceremony.
@@ -152,7 +152,7 @@ impl<FF: PrimeField> QAP<FF> {
 
   /// Constructs Radix2 Evaluation Domain, which will be used to do the FFTs.
   /// This implies that that roots of unity will be the evaluation points.
-  fn createEvaluationDomain(r1cs: &ConstraintSystemRef<FF>) -> Radix2EvaluationDomain<FF> {
+  pub(crate) fn getEvaluationDomain(r1cs: &ConstraintSystemRef<FF>) -> Radix2EvaluationDomain<FF> {
     // TODO : Understand, why that value is used as the minimum evaluation domain size.
     //        The highest degree polynomial in the QAP is A(X)*B(X), with degree 2(m-1),
     //        m being the number of constraints in R1CS.

@@ -1,3 +1,5 @@
+edition = "2015"
+
 group_imports = "One"
 imports_granularity = "One"
 

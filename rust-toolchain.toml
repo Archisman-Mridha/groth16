@@ -1,4 +1,4 @@
 [toolchain]
 channel = "nightly"
-components = ["rust-std"]
+components = ["rust-std", "rustfmt"]
 targets = ["riscv64gc-unknown-none-elf"]
