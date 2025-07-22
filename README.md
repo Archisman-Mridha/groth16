@@ -79,6 +79,12 @@ Approaching **Groth 16** :
 
 - [Groth16](https://xn--2-umb.com/22/groth16/) explained by Remco Bloemen.
 
+Existing **Groth16 implementations** :
+
+- [pinocchio_lambda_vm](https://github.com/lambdaclass/pinocchio_lambda_vm).
+
+- [mini-groth16](https://github.com/Saksham010/mini-groth16)
+
 ## Digging Deeper
 
 - [Proofs, Arguments, and Zero-Knowledge - Study Group](https://www.youtube.com/playlist?list=PLTPK8HRi5qmlIBA7TDTO8hBOprAc1FIQv)
